@@ -27,12 +27,57 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* image placeholder style – clean visual, no actual images */
+    .img-placeholder {
+      background: linear-gradient(135deg, #1e2b3a, #0f1a24);
+      border-radius: 20px;
+      height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9aaebf;
+      font-size: 1.3rem;
+      border: 2px solid #2e4053;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .img-placeholder i {
+      font-size: 3.5rem;
+      margin-right: 12px;
+      color: #5d7e9c;
+    }
+    .swiper-slide {
+      background: transparent;
+    }
+    .feature-box {
+      background: rgba(255,255,255,0.02);
+      padding: 12px 16px;
+      border-radius: 40px;
+      border: 1px solid #2a3a4a;
+    }
+    .feature-box i {
+      font-size: 1.5rem;
+      color: #4cafaf;
+      margin-right: 10px;
+    }
+    .service-info .info-item {
+      background: #1a2632;
+      padding: 16px;
+      border-radius: 16px;
+      margin-bottom: 15px;
+    }
+    .related-services .service-item {
+      background: #1a2632;
+      padding: 20px;
+      border-radius: 16px;
+      margin-bottom: 15px;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: SnapFolio
-  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-  * Updated: Jul 21 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Updated: with image‑free placeholders
   ======================================================== -->
 </head>
 
@@ -95,6 +140,7 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
+            <!-- image slider replaced with placeholder panels -->
             <div class="service-details-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
                 {
@@ -113,13 +159,22 @@
               </script>
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/services/services-1.webp" alt="Web Development Projects" class="img-fluid" loading="lazy">
+                  <div class="img-placeholder">
+                    <i class="bi bi-code-slash"></i> 
+                    <span>Web development showcase</span>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/services/services-2.webp" alt="Mobile App Development" class="img-fluid" loading="lazy">
+                  <div class="img-placeholder">
+                    <i class="bi bi-phone"></i> 
+                    <span>Mobile app (Flutter) preview</span>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/services/services-3.webp" alt="Backend Development" class="img-fluid" loading="lazy">
+                  <div class="img-placeholder">
+                    <i class="bi bi-database-gear"></i> 
+                    <span>Backend API architecture</span>
+                  </div>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -138,37 +193,37 @@
                 <div class="row gy-4">
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
+                      <i class="bi bi-check-circle-fill"></i>
                       <h4>Django Backend Development</h4>
                     </div>
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
+                      <i class="bi bi-check-circle-fill"></i>
                       <h4>Flutter Mobile Apps</h4>
                     </div>
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
+                      <i class="bi bi-check-circle-fill"></i>
                       <h4>Responsive Web Design</h4>
                     </div>
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
+                      <i class="bi bi-check-circle-fill"></i>
                       <h4>REST API Development</h4>
                     </div>
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
+                      <i class="bi bi-check-circle-fill"></i>
                       <h4>Database Design & Optimization</h4>
                     </div>
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
+                      <i class="bi bi-check-circle-fill"></i>
                       <h4>Cross-Platform Compatibility</h4>
                     </div>
                   </div>
@@ -251,11 +306,7 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Frankline Machage</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> (images replaced with placeholders)
       </div>
     </div>
 
@@ -281,7 +332,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    // force swiper initialization even with placeholders
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof Swiper !== 'undefined') {
+        new Swiper('.swiper', {
+          loop: true,
+          speed: 600,
+          autoplay: { delay: 5000 },
+          pagination: { el: '.swiper-pagination', clickable: true },
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

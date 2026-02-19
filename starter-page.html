@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Frankline Machage - Portfolio</title>
+  <title>Frankline Machage - About Me</title>
   <meta name="description" content="Frankline Machage - Software Developer specializing in web and mobile development">
   <meta name="keywords" content="Frankline Machage, software developer, web development, mobile development, Django, Flutter">
 
@@ -29,11 +29,52 @@
 
   <!-- =======================================================
   * Template Name: SnapFolio
-  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-  * Updated: Jul 21 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Updated: image‑free, CV‑aligned starter page
   ======================================================== -->
+  <style>
+    .skill-item {
+      background: rgba(255,255,255,0.02);
+      padding: 18px 15px;
+      border-radius: 20px;
+      border-left: 4px solid #4a6f8a;
+      transition: 0.2s;
+      text-align: left;
+    }
+    .skill-item:hover {
+      background: #1e2b38;
+      border-left-color: #5f9ea0;
+    }
+    .skill-item h5 {
+      color: #b0c9e0;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .skill-item p {
+      color: #a0b8cf;
+      margin: 0;
+    }
+    .contact-info p i {
+      color: #5f9ea0;
+      width: 30px;
+    }
+    .cta-section .btn-primary {
+      background: #2a4b6e;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 40px;
+      font-weight: 500;
+    }
+    .cta-section .btn-outline {
+      border: 2px solid #4a6f8a;
+      padding: 12px 32px;
+      border-radius: 40px;
+      color: #e0eaf5;
+    }
+    .cta-section .btn-outline:hover {
+      background: #2a4b6e;
+      border-color: #2a4b6e;
+    }
+  </style>
 </head>
 
 <body class="starter-page-page">
@@ -57,7 +98,7 @@
         <a href="https://x.com/frankmachage" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/_machage.f/" class="instagram"><i class="bi bi-instagram"></i></a>        
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://linkedin.com/in/frankline-machage-8159b0251" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -79,12 +120,12 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
+    <!-- Starter Section (fully CV integrated, no images) -->
     <section id="starter-section" class="starter-section section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Software Developer</h2>
+        <h2>Full Stack Developer & Cisco Certified</h2>
         <p>Specializing in web and mobile application development using modern technologies</p>
       </div><!-- End Section Title -->
 
@@ -94,33 +135,55 @@
             <div class="content text-center">
               <h3>Welcome to My Portfolio</h3>
               <p class="lead">
-                I'm Frankline Machage, a passionate software development student at Dedan Kimathi University of Technology, pursuing a BSc in Business Information Technology.
+                I'm Frankline Machage, a dedicated software development student at Dedan Kimathi University of Technology, pursuing a BSc in Business Information Technology (2021–2026). Passionate about building secure, high‑performance systems.
               </p>
               
+              <!-- Personal statement & objective (excerpt from CV) -->
+              <div class="personal-statement mt-4 text-start bg-dark p-4 rounded-4">
+                <p><strong>Personal statement:</strong> Aspiring Full Stack Software Engineer and Cisco Certified professional with strong expertise in backend development (Python/Django) and cross‑platform mobile apps (Flutter). Hands‑on experience building scalable web systems, integrating REST APIs, and deploying with Docker.</p>
+                <p class="mt-2"><strong>Career objective:</strong> To contribute my technical skills in software development and networking toward innovative, secure, and scalable digital solutions while continuously enhancing my expertise.</p>
+              </div>
+
+              <!-- Skills highlight (from CV) -->
               <div class="skills-highlight mt-5">
                 <h4>Technical Expertise</h4>
-                <div class="row mt-4">
+                <div class="row mt-4 g-3">
                   <div class="col-md-6">
-                    <div class="skill-item mb-3">
+                    <div class="skill-item">
                       <h5>Backend Development</h5>
-                      <p>Django, Python, REST APIs, Database Design</p>
+                      <p>Django, Python, REST APIs, PostgreSQL, Database Design</p>
                     </div>
-                    <div class="skill-item mb-3">
+                    <div class="skill-item mt-3">
                       <h5>Mobile Development</h5>
-                      <p>Flutter, Cross-platform Apps, Dart</p>
+                      <p>Flutter, Dart, cross‑platform apps, API integration</p>
+                    </div>
+                    <div class="skill-item mt-3">
+                      <h5>Networking & Security</h5>
+                      <p>CCNA, Cybersecurity Essentials, Linux, IoT</p>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="skill-item mb-3">
+                    <div class="skill-item">
                       <h5>Frontend Development</h5>
-                      <p>JavaScript, HTML5, CSS3, Responsive Design</p>
+                      <p>JavaScript, HTML5, CSS3, responsive design</p>
                     </div>
-                    <div class="skill-item mb-3">
-                      <h5>Tools & Technologies</h5>
-                      <p>Git, PostgreSQL, Bootstrap, Agile Methodologies</p>
+                    <div class="skill-item mt-3">
+                      <h5>DevOps & Tools</h5>
+                      <p>Docker, Git, GitHub, Agile methodologies</p>
+                    </div>
+                    <div class="skill-item mt-3">
+                      <h5>Other competencies</h5>
+                      <p>Analytical thinking, teamwork, fast learner</p>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <!-- work experience snapshot -->
+              <div class="experience-badge mt-5 p-4 rounded-4" style="background: #0f1a24;">
+                <h4>Recent experience</h4>
+                <p><i class="bi bi-briefcase me-2"></i> <strong>Backend Developer (Attachment)</strong> – Surestep Systems & Solutions Ltd (Jan 2025 – Mar 2025)<br>
+                Helawork Job Marketplace: Django, REST APIs, dual payment escrow & OTP release, Docker.</p>
               </div>
 
               <div class="cta-section mt-5">
@@ -132,8 +195,10 @@
                 <h4>Let's Connect</h4>
                 <p>
                   <i class="bi bi-envelope me-2"></i>machagefranklyn@gmail.com<br>
-                  <i class="bi bi-phone me-2"></i>+254 742 461 239<br>
-                  <i class="bi bi-geo-alt me-2"></i>Dedan Kimathi University
+                  <i class="bi bi-phone me-2"></i>+254 742 461 239  |  +254 746 228 031<br>
+                  <i class="bi bi-geo-alt me-2"></i>Nyeri, Kenya · Dedan Kimathi University<br>
+                  <i class="bi bi-linkedin me-2"></i>linkedin.com/in/frankline-machage-8159b0251<br>
+                  <i class="bi bi-github me-2"></i>github.com/machageFrank (portfolio: machageportfolio.netlify.app)
                 </p>
               </div>
             </div>
@@ -141,7 +206,7 @@
         </div>
       </div>
 
-    </section><!-- /Starter Section Section -->
+    </section><!-- /Starter Section -->
 
   </main>
 
@@ -152,11 +217,7 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Frankline Machage</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> (content updated from CV)
       </div>
     </div>
 
@@ -182,7 +243,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

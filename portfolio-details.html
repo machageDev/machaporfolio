@@ -34,6 +34,33 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    /* placeholders for removed images – clean visual */
+    .img-placeholder {
+      background: linear-gradient(145deg, #2a2f4f 0%, #1a1f3a 100%);
+      border-radius: 12px;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a0a8d0;
+      font-size: 1.2rem;
+      border: 2px dashed #4e5475;
+      margin-bottom: 20px;
+    }
+    .swiper-slide .img-placeholder {
+      height: 400px;
+      margin: 0;
+    }
+    .portfolio-details-slider .swiper-slide {
+      background: transparent;
+    }
+    .tech-badges .badge {
+      margin: 0 5px 8px 0;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -87,6 +114,7 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
+            <!-- Slider with placeholder blocks (images removed) -->
             <div class="portfolio-details-slider swiper init-swiper">
 
               <script type="application/json" class="swiper-config">
@@ -108,15 +136,24 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="System Helawork Dashboard" class="img-fluid" loading="lazy">
+                  <div class="img-placeholder">
+                    <i class="bi bi-window-sidebar" style="font-size: 3rem; margin-right: 10px;"></i> 
+                    <span>Helawork Dashboard (UI preview)</span>
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Mobile App Interface" class="img-fluid" loading="lazy">
+                  <div class="img-placeholder">
+                    <i class="bi bi-phone" style="font-size: 3rem; margin-right: 10px;"></i>
+                    <span>Mobile app interface</span>
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Admin Panel" class="img-fluid" loading="lazy">
+                  <div class="img-placeholder">
+                    <i class="bi bi-gear-wide-connected" style="font-size: 3rem; margin-right: 10px;"></i>
+                    <span>Admin panel mockup</span>
+                  </div>
                 </div>
 
               </div>
@@ -143,8 +180,8 @@
                 <span class="badge bg-secondary">Flutter</span>
                 <span class="badge bg-success">PostgreSQL</span>
                 <span class="badge bg-danger">REST API</span>
-                <span class="badge bg-warning">JavaScript</span>
-                <span class="badge bg-info">Bootstrap</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                <span class="badge bg-info text-dark">Bootstrap</span>
               </div>
             </div>
           </div>
@@ -290,7 +327,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    // ensure swiper initializes even without real images
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof Swiper !== 'undefined') {
+        new Swiper('.swiper', {
+          loop: true,
+          speed: 600,
+          autoplay: { delay: 5000 },
+          pagination: { el: '.swiper-pagination', clickable: true },
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
