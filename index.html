@@ -47,8 +47,10 @@
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
           <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>        
+          <!-- Portfolio link now points to portfolio-details.html -->
+          <li><a href="portfolio-details.html"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <!-- Services link now points to service-details.html -->
+          <li><a href="service-details.html"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>        
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
@@ -87,7 +89,8 @@
                 <p class="description">Full Stack Software Engineer and Cisco Certified professional with strong expertise in backend development (Python/Django) and cross-platform mobile apps (Flutter). Passionate about building secure, high‑performance systems.</p>
 
                 <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <!-- View My Work button points to portfolio-details.html -->
+                  <a href="portfolio-details.html" class="btn btn-primary">View My Work</a>
                   <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
 
@@ -462,79 +465,6 @@
 
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section (using CV projects) -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Showcasing Helawork, e‑voting, and other Django/Flutter projects</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <div class="row">
-            <div class="col-lg-3 filter-sidebar">
-              <ul class="portfolio-filters isotope-filters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-django">Django</li>
-                <li data-filter=".filter-flutter">Flutter</li>
-              </ul>
-            </div>
-            <div class="col-lg-9">
-              <div class="row gy-4 portfolio-container">
-                <!-- Helawork -->
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-django filter-flutter">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/job-marketplace.webp" class="img-fluid" alt="" loading="lazy">
-                    <div class="portfolio-info">
-                      <span class="category">Full Stack</span>
-                      <h4>Helawork Job Marketplace</h4>
-                      <p>Django REST + Flutter. Escrow + OTP payment, wallet, freelancer ratings.</p>
-                      <a href="assets/img/portfolio/job-marketplace.webp" class="glightbox" title="Helawork details"><i class="bi bi-plus-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- E-Voting -->
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-django">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/e-voting.webp" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <span class="category">Django</span>
-                      <h4>Secure E-Voting</h4>
-                      <p>Authentication, vote casting, result processing.</p>
-                      <a href="assets/img/portfolio/e-voting.webp" class="glightbox" title="E-Voting"><i class="bi bi-plus-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Additional Django/Flutter placeholders match CV context -->
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-django">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <span class="category">Django</span>
-                      <h4>Freelancer Wallet System</h4>
-                      <p>Transaction logging, balance tracking, atomic transfers.</p>
-                      <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Wallet system"><i class="bi bi-plus-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-flutter">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/flower-classifier.webp" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <span class="category">Flutter</span>
-                      <h4>Flutter UI for Helawork</h4>
-                      <p>Integrated escrow status, OTP verification screens.</p>
-                      <a href="assets/img/portfolio/flower-classifier.webp" class="glightbox" title="Flutter app"><i class="bi bi-plus-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Services (rephrased from CV skills) -->
     <section id="services" class="services section">
@@ -580,7 +510,7 @@
           <div class="col-lg-5">
             <div class="info-box">
               <h3>Frankline Machage</h3>
-              <div class="info-item"><i class="bi bi-geo-alt"></i> Nyeri, Kenya</div>
+              <div class="info-item"><i class="bi bi-geo-alt"></i> Nairobi, Kenya</div>
               <div class="info-item"><i class="bi bi-telephone"></i> +254 742 461 239 / +254 746 228 031</div>
               <div class="info-item"><i class="bi bi-envelope"></i> machagefranklyn@gmail.com</div>
               <div class="info-item"><i class="bi bi-linkedin"></i> /in/frankline-machage-8159b0251</div>
@@ -626,7 +556,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script> 
   <script>
     // ensure purecounter works
     new PureCounter();
